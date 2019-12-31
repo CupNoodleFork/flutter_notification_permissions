@@ -1,6 +1,6 @@
 name: push_notification_permissions
 description: A plugin to check and ask for notification permissions on Android and iOS
-version: 0.1.0+2
+version: 0.1.0+4
 author: Gonçalo Palma <solid.goncalo@gmail.com>, CNFK<nbfhzcw123@gmail.com>
 homepage: https://github.com/CupNoodleFork/flutter_notification_permissions
 
@@ -10,7 +10,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  meta: ^1.1.8
 
 dev_dependencies:
   flutter_test:

@@ -1,3 +1,9 @@
+## 0.1.0+4
+* remove swift file
+
+## 0.1.0+3
+* remove meta
+
 ## 0.1.0+2
 * README.md
 
