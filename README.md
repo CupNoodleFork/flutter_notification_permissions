@@ -6,7 +6,7 @@ Package to check for and ask for Notification Permissions on iOS and Android.
 ## Checking Notification Permission Status
 ```dart
 Future<PermissionStatus> permissionStatus =
-    NotificationPermissions.getNotificationPermissionStatus();
+    PushNotificationPermissions.getNotificationPermissionStatus();
 ```
 
 This method will return an enum with the following values:
@@ -24,7 +24,7 @@ In iOS, a permission is `unknown` when the user hasn’t accepted or refuse the 
 ## Requesting Notification Permissions
 If the `PermissionStatus` is `denied` or `unknown`, we can ask the user for the Permissions:
 ```dart
-Future<PermissionStatus> permissionStatus = NotificationPermissions.getNotificationPermissionStatus({NotificationSettingsIos iosSettings, bool openSettings});
+Future<PermissionStatus> permissionStatus = PushNotificationPermissions.getNotificationPermissionStatus({NotificationSettingsIos iosSettings, bool openSettings});
 ```
 
 On Android, if the permission is `denied`, this method will open the app settings.
@@ -34,17 +34,3 @@ Also in iOS if you set `openSettings` to false settings window won't be opened. 
 `NotificationPermissions.getNotificationPermissionStatus` returns status after user select answer from native permission popup.
 
 Note: if the permission is `granted`, this method will not do anything.
-
-## iOS Error: Swift.h not found
-
-If your project is in Objective-C, you will have to do the changes referenced in [this SO post](https://stackoverflow.com/a/53453243/4499889) in order to solve the issue:
-
-```
-'notification_permissions/notification_permissions-Swift.h' file not found
-    #import <notification_permissions/notification_permissions-Swift.h>
-            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    1 error generated.
-```
-
-## Special Thanks
-Special thanks to [fedecastelli](https://github.com/fedecastelli) for helping me in the Swift Code!
