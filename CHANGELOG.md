@@ -1,3 +1,6 @@
+## 0.1.0+2
+* README.md
+
 ## 0.1.0+1
 * Remove useless files
 
