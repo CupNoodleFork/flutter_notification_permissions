@@ -1,5 +1,5 @@
-name: notification_permissions_example
-description: Demonstrates how to use the notification_permissions plugin.
+name: push_notification_permissions_example
+description: Demonstrates how to use the push_notification_permissions plugin.
 publish_to: 'none'
 
 environment:
@@ -17,11 +17,11 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  notification_permissions:
+  push_notification_permissions:
     path: ../
 
 # For information on the generic Dart part of this file, see the
-# following page: https://www.dartlang.org/tools/pub/pubspec
+# following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter.
 flutter:
@@ -37,10 +37,10 @@ flutter:
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.io/assets-and-images/#resolution-aware.
+  # https://flutter.dev/assets-and-images/#resolution-aware.
 
   # For details regarding adding assets from package dependencies, see
-  # https://flutter.io/assets-and-images/#from-packages
+  # https://flutter.dev/assets-and-images/#from-packages
 
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
@@ -60,4 +60,4 @@ flutter:
   #         weight: 700
   #
   # For details regarding fonts from package dependencies,
-  # see https://flutter.io/custom-fonts/#from-packages
+  # see https://flutter.dev/custom-fonts/#from-packages

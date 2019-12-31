@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:notification_permissions/notification_permissions.dart';
+import 'package:push_notification_permissions/push_notification_permissions.dart';
 
 void main() => runApp(MyApp());
 
@@ -41,7 +41,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
 
   /// Checks the notification permission status
   Future<String> getCheckNotificationPermStatus() {
-    return NotificationPermissions.getNotificationPermissionStatus()
+    return PushNotificationPermissions.getNotificationPermissionStatus()
         .then((status) {
       switch (status) {
         case PermissionStatus.denied:
@@ -99,7 +99,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
                             Text("Ask for notification status".toUpperCase()),
                         onPressed: () {
                           // show the dialog/open settings screen
-                          NotificationPermissions
+                          PushNotificationPermissions
                                   .requestNotificationPermissions(
                                       iosSettings:
                                           const NotificationSettingsIos(

@@ -1,4 +1,6 @@
-# Flutter Notification Permissions
+# Push Notification Permissions
+Fork from [notification_permissions](https://pub.dev/packages/notification_permissions) change Swift to Objective-C
+
 Package to check for and ask for Notification Permissions on iOS and Android.
 
 ## Checking Notification Permission Status
